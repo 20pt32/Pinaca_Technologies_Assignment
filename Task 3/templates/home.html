@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>NER Analysis Tool</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  </head>
+  <body>
+    <div class="container mt-5">
+      <div class="row">
+        <div class="col-md-8 offset-md-2">
+          <h1 class="text-center mb-5">NER Analysis Tool</h1>
+          <form method="POST" action="{{ url_for('analyze') }}">
+            <div class="form-group">
+              <label for="url">Enter a URL to analyze:</label>
+              <input type="text" name="url" class="form-control" placeholder="https://www.example.com">
+            </div>
+            <button type="submit" class="btn btn-primary">Analyze</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
